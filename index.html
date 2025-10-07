@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pay via UPI</title>
+  <script>
+    window.onload = function() {
+      const upiLink = "upi://pay?pa=rakeshjangra60@okhdfcbank&pn=RAKESH&am=120.00&cu=INR&tn=Order%20Payment";
+      window.location.href = upiLink;
+    };
+  </script>
+</head>
+<body>
+  <h3>Opening your UPI app...</h3>
+  <p>If it doesn’t open automatically, <a id="manual" href="#">click here</a></p>
+  <script>
+    document.getElementById('manual').href = "upi://pay?pa=rakeshjangra60@okhdfcbank&pn=RAKESH&am=120.00&cu=INR&tn=Order%20Payment";
+  </script>
+</body>
+</html>
